@@ -30,12 +30,33 @@
     justify-content: space-around;
     grid-area: a;
 }
+/* HOMEPAGE CAROUSEL */
+
+.carousel {
+    border: 10px solid #459cee21;
+    box-shadow: 5px 5px 10px rgb(161, 161, 161), 10px 10px 5px #459cee;
+}
+
+.carousel-caption {
+    position: relative;
+    background-color: #459cee73;
+    border: 10px double #1563ada9;
+    border-radius: 5px 50px;
+}
+
+.carousel-cap1 {
+    top: 250px;
+    width: 400px;
+    height: 200px;
+}
+
 /* HOMEPAGE PRODUCTS */
 
 .card {
     width: 24rem;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 10px rgb(161, 161, 161), 10px 10px 5px #459cee;
 }
 .card img {
     width: 350px;
@@ -55,20 +76,48 @@
     gap: 20px;
 }
 table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
     width: 30rem;
+    border: 1px double #459cee;
+}
+td,
+th {
+    text-align: center;
 }
 
-caption {
+tr:nth-child(even) {
+    background-color: #459cee8c;
+}
+
+.captions {
     caption-side: top;
     padding: 10px;
     font-weight: bold;
+    text-align: center;
 }
+
+/* FOOTER ROW */
 .footer-row {
     display: flex;
     justify-content: space-around;
     align-items: center;
     grid-area: c;
-    border: 3px solid white;
+    border-top: 1px solid #459cee;
+    border-bottom: 30px solid #459cee;
+    padding-top: 10px;
+}
+
+.footer-form {
+    height: 100px;
+}
+
+.button-class {
+    background-color: #459cee;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: white;
+    border: 1px solid #115ca1;
 }
 
 /* ABOUT PAGE */
