@@ -35,11 +35,12 @@
 .carousel {
     border: 10px solid #459cee21;
     box-shadow: 5px 5px 10px rgb(161, 161, 161), 10px 10px 5px #459cee;
+    margin-top: 15px;
 }
 
 .carousel-caption {
     position: relative;
-    background-color: #459cee73;
+    background-color: #459ceeaf;
     border: 10px double #1563ada9;
     border-radius: 5px 50px;
 }
@@ -97,21 +98,6 @@ tr:nth-child(even) {
     text-align: center;
 }
 
-/* FOOTER ROW */
-.footer-row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: c;
-    border-top: 1px solid #459cee;
-    border-bottom: 30px solid #459cee;
-    padding-top: 10px;
-}
-
-.footer-form {
-    height: 100px;
-}
-
 .button-class {
     background-color: #459cee;
     padding: 5px 10px;
@@ -127,14 +113,42 @@ tr:nth-child(even) {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px solid white;
+    border: 3px solid #459cee73;
+    box-shadow: 5px 5px 10px rgb(161, 161, 161), 10px 10px 5px #459cee;
+    padding-bottom: 15px;
+    margin: 50px 0 50px 0;
+}
+
+.about-content {
+    padding-top: 25px;
+    width: 1000px;
+
+    margin-top: 50px;
+}
+.about-content h1 {
+    color: #459cee;
+}
+
+.p-span {
+    color: #459cee;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.group-image {
+    height: auto;
+    width: 100%;
 }
 
 /* CONTACT PAGE */
-.about-section {
+.contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px 0;
+    padding-top: 20px;
+    border: 1px solid #459cee;
+    box-shadow: 5px 5px 10px rgb(161, 161, 161), 10px 10px 5px #459cee;
 }
 .contact-info input[type="text"],
 .contact-info select,
@@ -158,4 +172,18 @@ tr:nth-child(even) {
 
 .contact-btn:hover {
     background-color: #115ca1;
+}
+/* FOOTER ROW */
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: c;
+    border-top: 1px solid #459cee;
+    border-bottom: 30px solid #459cee;
+    padding-top: 10px;
+}
+
+.footer-form {
+    height: 100px;
 }

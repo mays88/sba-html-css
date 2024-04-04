@@ -10,6 +10,16 @@
             integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
             crossorigin="anonymous"
         />
+        <style>
+            h1 {
+                color: #459cee;
+            }
+
+            .about-content-p::first-letter {
+                color: #459cee;
+                font-size: 50px;
+            }
+        </style>
         <title>About</title>
     </head>
     <body class="container-fluid mainBody">
@@ -95,35 +105,95 @@
             </div>
         </nav>
         <div class="container about-row">
-            <h1>About Me</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                minima impedit est, dignissimos autem deleniti, esse aut
-                doloremque quis quod magni praesentium excepturi. Dignissimos
-                nihil tempore aperiam rerum, natus impedit iure dicta officia
-                quibusdam ex velit cum assumenda, blanditiis quas earum minima
-                qui hic saepe nobis quisquam eum corporis? Explicabo?
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
-                illum esse earum perferendis molestias neque deserunt eligendi
-                animi laborum, sit debitis quo ab vitae voluptatem fugiat
-                maiores cupiditate eaque! Reprehenderit fugiat voluptates itaque
-                ea beatae sed perferendis ullam, minus facilis, aut, fugit rerum
-                et repellendus ratione. Voluptas repudiandae rerum harum eaque
-                amet sapiente dignissimos! Velit nisi neque veniam voluptas
-                harum at. Error aut minima iure qui accusantium eos laboriosam
-                facere sed, illo minus sint asperiores impedit earum ab eligendi
-                odio explicabo dignissimos nemo eaque nobis modi rerum. Debitis,
-                sunt modi nam, laborum exercitationem eaque veniam dolorem
-                numquam cumque ratione illum?
-            </p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
-                architecto dolores amet rerum? Eaque nisi consequuntur, itaque
-                alias magnam possimus?
-            </p>
+            <div class="about-content">
+                <h1>About Us</h1>
+                <p class="about-content-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quae minima impedit est, dignissimos autem deleniti, esse
+                    aut doloremque quis quod magni praesentium excepturi.
+                    Dignissimos nihil tempore aperiam rerum, natus impedit iure
+                    dicta officia quibusdam ex velit cum assumenda, blanditiis
+                    quas
+                    <span class="p-span"
+                        >earum minima qui hic saepe nobis quisquam eum
+                        corporis?</span
+                    >
+                    Explicabo?
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nam illum esse earum perferendis molestias neque deserunt
+                    eligendi animi laborum, sit debitis quo ab vitae voluptatem
+                    fugiat maiores cupiditate eaque! Reprehenderit fugiat
+                    voluptates itaque ea beatae sed perferendis ullam, minus
+                    facilis, aut, fugit rerum et repellendus ratione.
+                    <span class="p-span"
+                        >Voluptas repudiandae rerum harum eaque amet sapiente
+                        dignissimos!</span
+                    >
+                    Velit nisi neque veniam voluptas harum at. Error aut minima
+                    iure qui accusantium eos laboriosam facere sed, illo minus
+                    sint asperiores impedit earum ab eligendi odio explicabo
+                    dignissimos nemo eaque nobis modi rerum.
+                    <span class="p-span"
+                        >Debitis, sunt modi nam, laborum exercitationem eaque
+                        veniam dolorem numquam cumque ratione illum?</span
+                    >
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Aut architecto dolores amet rerum? Eaque nisi consequuntur,
+                    itaque alias magnam possimus?
+                </p>
+                <img
+                    src="https://www.usatoday.com/gcdn/-mm-/af68c94747c0b2c9de1827377c6e366d5d8d12eb/c=0-224-2417-1590/local/-/media/2016/01/29/USATODAY/USATODAY/635896597858757331-combo-for-tech.jpg"
+                    alt="Group Pic"
+                    class="group-image"
+                />
+            </div>
         </div>
+        <footer class="footer-row">
+            <div>
+                <form action=" ">
+                    <div class="container">
+                        <h5>Subscribe to our Newsletter</h5>
+                        <p>The Air in You</p>
+                    </div>
+
+                    <div class="container" style="background-color: white">
+                        <input
+                            type="text"
+                            placeholder="Name"
+                            name="name"
+                            required
+                        />
+                        <input
+                            type="text"
+                            placeholder="Email address"
+                            name="mail"
+                            required
+                        />
+                        <label>
+                            <input
+                                type="checkbox"
+                                checked="checked"
+                                name="subscribe"
+                            />
+                            Daily Newsletter
+                        </label>
+                    </div>
+
+                    <div class="container">
+                        <input
+                            class="button-class"
+                            type="submit"
+                            value="Subscribe"
+                        />
+                    </div>
+                </form>
+            </div>
+            <h5>&#169; Airn't Inc 2024</h5>
+        </footer>
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
