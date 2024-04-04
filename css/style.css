@@ -1,3 +1,18 @@
+@keyframes homeload {
+    0% {
+        background-color: #459cee;
+    }
+    25% {
+        background-color: #88c2f8;
+    }
+    50% {
+        background-color: #d1e7fc;
+    }
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,6 +20,8 @@
 }
 .mainBody {
     background-color: rgb(255, 255, 255);
+    animation-name: homeload;
+    animation-duration: 2s;
 }
 .content-wrapper {
     display: grid;
