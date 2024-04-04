@@ -3,7 +3,9 @@
     padding: 0;
     margin: 0;
 }
-
+.mainBody {
+    background-color: rgb(255, 255, 255);
+}
 .content-wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -28,6 +30,18 @@
     justify-content: space-around;
     grid-area: a;
 }
+/* HOMEPAGE PRODUCTS */
+
+.card {
+    width: 24rem;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    width: 350px;
+    height: 400px;
+}
+
 /* HOMEPAGE TABLE */
 .table-row {
     display: flex;
@@ -50,22 +64,49 @@ caption {
     font-weight: bold;
 }
 .footer-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     grid-area: c;
     border: 3px solid white;
 }
+
+/* ABOUT PAGE */
 .about-row {
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border: 3px solid white;
 }
 
-.h1TEST {
+/* CONTACT PAGE */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-info input[type="text"],
+.contact-info select,
+.contact-info textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.contact-btn {
+    background-color: #459cee;
     color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.mainBody {
-    background-color: rgb(0, 0, 22);
-}
-
-.card {
-    width: 24rem;
+.contact-btn:hover {
+    background-color: #115ca1;
 }
